@@ -1,0 +1,18 @@
+<mat-card class="container">
+  <div class="details">
+    <mat-card-content class="content">
+      <mat-card-title class="title">Live from space</mat-card-title>
+      <mat-card-subtitle class="title">Mac Miller</mat-card-subtitle>
+      <div class="controls">
+          <button mat-icon-button>
+            <mat-icon class="play-icon" (click)="this.getAudioDuration()">play_arrow</mat-icon>
+          </button>
+<!--          <mat-progress-bar mode="determinate"  value="{{this.audio.duration}}" style="width: 180px"-->
+<!--                            ></mat-progress-bar>-->
+        <mat-progress-bar mode="determinate" [value]="this.currentPercentagePlayed" style="width: 180px"
+        ></mat-progress-bar>
+      </div>
+    </mat-card-content>
+  </div>
+  <img class="cover" mat-card-image src="/assets/backgroundImages/sea.jpg" alt="">
+</mat-card>

@@ -1,0 +1,10 @@
+<div class="container">
+  <app-background-control></app-background-control>
+  <mat-card class="button-container">
+    <ng-container *ngFor="let sound of this.soundConfiguration">
+    <app-sound-button *ngIf="this.sound.enabled"
+                      [title]=sound.title [icon]=sound.icon
+                      [soundUrl]="sound.url"></app-sound-button>
+    </ng-container>
+  </mat-card>
+</div>

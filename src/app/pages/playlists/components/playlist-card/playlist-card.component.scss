@@ -1,0 +1,43 @@
+.container {
+  margin: 20px;
+  display: flex;
+  max-height: 100px;
+  max-width: 400px;
+  flex-wrap: wrap;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  margin: 10px;
+}
+
+.cover {
+  width: 30%;
+  height: 100%;
+  margin: 5px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.play-icon {
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+}
