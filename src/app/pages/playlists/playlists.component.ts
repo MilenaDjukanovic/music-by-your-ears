@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {defaultPlaylistConfiguration} from '../../configuration/defaultPlaylistConfiguration';
 
 @Component({
   selector: 'app-playlists',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./playlists.component.scss']
 })
 export class PlaylistsComponent implements OnInit {
+
+  public playlistConfiguration = defaultPlaylistConfiguration;
 
   constructor() { }
 

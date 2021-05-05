@@ -6,9 +6,24 @@
   flex-direction: column;
 }
 
-.button-container{
+.button-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.subtitle {
+  padding-top: 1em;
+  max-width: 50%;
+  text-align: center;
 }

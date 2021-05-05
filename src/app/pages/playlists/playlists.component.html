@@ -1,2 +1,7 @@
-<p>playlists works!</p>
-<app-playlist-card style="display: flex; justify-content: center"></app-playlist-card>
+<div class="container">
+<app-playlist-card *ngFor="let playlist of this.playlistConfiguration"
+                   [title]="playlist.title" [artist]="playlist.artist"
+                   [image]="playlist.image" [sound]="playlist.sound"
+                   [icons]="playlist.icons"
+  ></app-playlist-card>
+</div>

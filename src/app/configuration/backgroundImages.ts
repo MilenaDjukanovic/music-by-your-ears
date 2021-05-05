@@ -30,8 +30,8 @@ export const backgroundImages = [
     icon: 'landscape',
   },
   {
-    title: 'Mountains',
-    imageUrl: '/assets/backgroundImages/mountains.jpg',
-    icon: 'landscape',
+    title: 'Record',
+    imageUrl: '/assets/backgroundImages/record.jpg',
+    icon: 'album',
   }
 ];

@@ -1,18 +1,27 @@
 <mat-card class="container">
-  <div class="details">
-    <mat-card-content class="content">
-      <mat-card-title class="title">Live from space</mat-card-title>
-      <mat-card-subtitle class="title">Mac Miller</mat-card-subtitle>
-      <div class="controls">
-          <button mat-icon-button>
-            <mat-icon class="play-icon" (click)="this.getAudioDuration()">play_arrow</mat-icon>
-          </button>
-<!--          <mat-progress-bar mode="determinate"  value="{{this.audio.duration}}" style="width: 180px"-->
-<!--                            ></mat-progress-bar>-->
-        <mat-progress-bar mode="determinate" [value]="this.currentPercentagePlayed" style="width: 180px"
-        ></mat-progress-bar>
-      </div>
-    </mat-card-content>
-  </div>
-  <img class="cover" mat-card-image src="/assets/backgroundImages/sea.jpg" alt="">
+  <img mat-card-image src="{{this.image}}" alt="">
+  <mat-card-content class="content">
+    <div>
+      <mat-card-title>{{this.title}}</mat-card-title>
+      <mat-card-subtitle>{{this.artist}}</mat-card-subtitle>
+    </div>
+    <mat-card-actions class="controls">
+      <button mat-icon-button>
+        <mat-icon (click)="this.playPauseAudio()"
+                  *ngIf="this.audio.paused">play_arrow
+        </mat-icon>
+        <mat-icon (click)="this.playPauseAudio()"
+                  *ngIf="!this.audio.paused">pause
+        </mat-icon>
+      </button>
+      <mat-slider class="slider" [value]="this.currentTimePlayed" color="primary"
+                  thumbLabel
+                  [max]="this.audio.duration"
+                  [step]="0.1"
+                  [displayWith]="this.formatLabel"
+                  (input)="this.onInputChanged($event)"
+      ></mat-slider>
+      <button mat-stroked-button (click)="openDialog()">See details</button>
+    </mat-card-actions>
+  </mat-card-content>
 </mat-card>

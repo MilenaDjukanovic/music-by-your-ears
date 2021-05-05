@@ -18,6 +18,10 @@ import {MatCardModule} from '@angular/material/card';
 import {BackgroundControlComponent} from './pages/create-sound/components/background-control/background-control.component';
 import {PlaylistCardComponent} from './pages/playlists/components/playlist-card/playlist-card.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { ButtonDialogComponent } from './pages/playlists/components/button-dialog/button-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     HomeComponent,
     PlaylistsComponent,
     BackgroundControlComponent,
-    PlaylistCardComponent
+    PlaylistCardComponent,
+    ButtonDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,10 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatSidenavModule,
     MatCardModule,
     MatListModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatSliderModule,
+    MatTooltipModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
