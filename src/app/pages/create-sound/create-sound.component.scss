@@ -12,6 +12,12 @@
   justify-content: center;
   align-items: center;
   max-width: 70%;
+  background-color: rgba(17, 16, 16, 0.5);
+}
+
+
+.background-controls {
+  min-width: 76%;
 }
 
 .content {
@@ -23,7 +29,14 @@
 }
 
 .subtitle {
+  color: white;
   padding-top: 1em;
-  max-width: 50%;
+  max-width: 60%;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .subtitle {
+    max-width: 100%;
+  }
 }

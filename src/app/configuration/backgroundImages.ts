@@ -1,8 +1,8 @@
 export const backgroundImages = [
   {
-    title: 'No filter',
-    imageUrl: '/assets/backgroundImages/base.jpeg',
-    icon: ''
+    title: 'Default',
+    imageUrl: '/assets/backgroundImages/record.jpg',
+    icon: 'album'
   },
   {
     title: 'Sea',
@@ -28,10 +28,5 @@ export const backgroundImages = [
     title: 'Mountains',
     imageUrl: '/assets/backgroundImages/mountains.jpg',
     icon: 'landscape',
-  },
-  {
-    title: 'Record',
-    imageUrl: '/assets/backgroundImages/record.jpg',
-    icon: 'album',
   }
 ];

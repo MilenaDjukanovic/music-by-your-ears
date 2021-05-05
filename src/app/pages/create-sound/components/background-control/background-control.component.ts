@@ -1,5 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {backgroundImages} from '../../../../configuration/backgroundImages';
+import {Component, OnInit} from '@angular/core';
 import {BackgroundChangeService} from '../../../../services/background-change.service';
 
 @Component({
@@ -10,19 +9,18 @@ import {BackgroundChangeService} from '../../../../services/background-change.se
 export class BackgroundControlComponent implements OnInit {
 
   public activeIndex!: number;
-  public backgroundImages = backgroundImages;
+  public backgroundImages: any;
 
   constructor(private backgroundChangeService: BackgroundChangeService) {
   }
 
   ngOnInit(): void {
+    this.backgroundImages = this.backgroundChangeService.getBackgroundImages();
     this.loadInitialBackground();
   }
 
-  private loadInitialBackground(): void{
-    if (!this.backgroundChangeService.getLastSelectedBackground()) {
-      this.setDefaultBackground();
-    } else {
+  private loadInitialBackground(): void {
+    if (this.backgroundChangeService.getLastSelectedBackground()) {
       this.activeIndex = this.backgroundChangeService.getLastIndex();
     }
   }

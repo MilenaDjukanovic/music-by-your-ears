@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {MatSliderChange, MatSliderModule} from '@angular/material/slider';
 import {MatDialog} from '@angular/material/dialog';
 import {ButtonDialogComponent} from '../button-dialog/button-dialog.component';
@@ -12,7 +12,7 @@ export interface DialogData {
   templateUrl: './playlist-card.component.html',
   styleUrls: ['./playlist-card.component.scss']
 })
-export class PlaylistCardComponent implements OnInit {
+export class PlaylistCardComponent implements OnInit, OnDestroy {
 
   @Input() title!: string;
   @Input() artist!: string;
@@ -35,7 +35,7 @@ export class PlaylistCardComponent implements OnInit {
     this.audio.src = this.sound;
     this.audio.load();
 
-    this.audio.addEventListener('timeupdate', (currentTime) => {
+    this.audio.addEventListener('timeupdate', () => {
       this.currentTimePlayed = this.audio.currentTime;
     });
   }
@@ -63,4 +63,8 @@ export class PlaylistCardComponent implements OnInit {
 
   }
 
+   ngOnDestroy(): void {
+    this.audio.pause();
+    this.audio.removeAttribute('src');
+  }
 }

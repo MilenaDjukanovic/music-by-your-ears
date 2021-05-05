@@ -10,7 +10,8 @@ import {DialogData} from '../playlist-card/playlist-card.component';
 export class ButtonDialogComponent implements OnInit {
 
   constructor(public dialogRef: MatDialogRef<ButtonDialogComponent>,
-              @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
+              @Inject(MAT_DIALOG_DATA) public data: DialogData) {
+  }
 
   ngOnInit(): void {
   }
