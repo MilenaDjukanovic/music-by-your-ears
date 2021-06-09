@@ -2,163 +2,139 @@ export const defaultSoundConfiguration = [
   {
     title: 'Sea',
     url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'waves',
+    icon: 'sea',
     enabled: true
   },
   {
     title: 'Forest',
     url: 'assets/soundConfiguration/sounds/forest.wav',
-    icon: 'nature',
+    icon: 'forest',
     enabled: true
   },
   {
-    title: 'Alarm',
-    url: 'assets/soundConfiguration/sounds/forest.wav',
-    icon: 'alarm',
+    title: 'Airport',
+    url: 'assets/soundConfiguration/sounds/airport.wav',
+    icon: 'airport',
     enabled: true
   },
   {
-    title: 'Airplane',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'flight',
+    title: 'Applause',
+    url: 'assets/soundConfiguration/sounds/applause.wav',
+    icon: 'applause',
     enabled: true
   },
   {
-    title: 'Cat',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'pets',
+    title: 'Birdsong',
+    url: 'assets/soundConfiguration/sounds/birdsong.wav',
+    icon: 'birdsong',
     enabled: true
   },
   {
-    title: 'Notification',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'notifications',
+    title: 'Car',
+    url: 'assets/soundConfiguration/sounds/car.wav',
+    icon: 'car',
     enabled: true
   },
   {
-    title: 'Chatter',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'people',
+    title: 'Cityscape',
+    url: 'assets/soundConfiguration/sounds/cityscape.wav',
+    icon: 'cityscape',
     enabled: true
   },
   {
-    title: 'Phone',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'phone',
+    title: 'Clock',
+    url: 'assets/soundConfiguration/sounds/clock.wav',
+    icon: 'clock',
     enabled: true
   },
   {
-    title: 'Dialpad',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'dialpad',
+    title: 'Electricity',
+    url: 'assets/soundConfiguration/sounds/electricity.wav',
+    icon: 'electricity',
     enabled: true
   },
   {
-    title: 'Sea',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'waves',
+    title: 'Guitar',
+    url: 'assets/soundConfiguration/sounds/guitar.wav',
+    icon: 'guitar',
     enabled: true
   },
   {
-    title: 'Forest',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'nature',
+    title: 'Spring rain',
+    url: 'assets/soundConfiguration/sounds/light_rain.wav',
+    icon: 'gentle_rain',
     enabled: true
   },
   {
-    title: 'Alarm',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'alarm',
+    title: 'Piano',
+    url: 'assets/soundConfiguration/sounds/piano.mp3',
+    icon: 'piano',
     enabled: true
   },
   {
-    title: 'Airplane',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'flight',
+    title: 'Rain on metal',
+    url: 'assets/soundConfiguration/sounds/rain_on_rooftop.wav',
+    icon: 'rooftop_rain',
     enabled: true
   },
   {
-    title: 'Cat',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'pets',
+    title: 'Window rain',
+    url: 'assets/soundConfiguration/sounds/rain_on_window.wav',
+    icon: 'rain_on_window',
     enabled: true
   },
   {
-    title: 'Notification',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'notifications',
+    title: 'Thunder',
+    url: 'assets/soundConfiguration/sounds/thunder.wav',
+    icon: 'thunder',
     enabled: true
   },
   {
-    title: 'Chatter',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'people',
+    title: 'Storm',
+    url: 'assets/soundConfiguration/sounds/thunderstorm.wav',
+    icon: 'thunderstorm',
     enabled: true
   },
   {
-    title: 'Phone',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'phone',
+    title: 'Typing',
+    url: 'assets/soundConfiguration/sounds/typing.wav',
+    icon: 'keyboard',
     enabled: true
   },
   {
-    title: 'Dialpad',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'dialpad',
+    title: 'Violin',
+    url: 'assets/soundConfiguration/sounds/violin.wav',
+    icon: 'violin',
     enabled: true
   },
   {
-    title: 'Sea',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'waves',
+    title: 'Volcano',
+    url: 'assets/soundConfiguration/sounds/volcano.wav',
+    icon: 'volcano',
     enabled: true
   },
   {
-    title: 'Forest',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'nature',
+    title: 'Whisper',
+    url: 'assets/soundConfiguration/sounds/whisper.wav',
+    icon: 'whisper',
     enabled: true
   },
   {
-    title: 'Alarm',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'alarm',
+    title: 'Whistle',
+    url: 'assets/soundConfiguration/sounds/whistle.wav',
+    icon: 'whistle',
     enabled: true
   },
   {
-    title: 'Airplane',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'flight',
+    title: 'Wind',
+    url: 'assets/soundConfiguration/sounds/wind.wav',
+    icon: 'wind',
     enabled: true
   },
   {
-    title: 'Cat',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'pets',
+    title: 'Wolf',
+    url: 'assets/soundConfiguration/sounds/wolves.wav',
+    icon: 'wolf',
     enabled: true
   },
-  {
-    title: 'Notification',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'notifications',
-    enabled: true
-  },
-  {
-    title: 'Chatter',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'people',
-    enabled: true
-  },
-  {
-    title: 'Phone',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'phone',
-    enabled: true
-  },
-  {
-    title: 'Dialpad',
-    url: 'assets/soundConfiguration/sounds/sea.wav',
-    icon: 'dialpad',
-    enabled: true
-  }
 ];

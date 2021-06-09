@@ -2,6 +2,7 @@ import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {MatSliderChange, MatSliderModule} from '@angular/material/slider';
 import {MatDialog} from '@angular/material/dialog';
 import {ButtonDialogComponent} from '../button-dialog/button-dialog.component';
+import {PlaylistService} from '../../../../services/playlist.service';
 
 export interface DialogData {
   icons: any;
@@ -24,7 +25,10 @@ export class PlaylistCardComponent implements OnInit, OnDestroy {
 
   public currentTimePlayed = 0;
 
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog, private playlistService: PlaylistService) {
+    this.playlistService.pauseVideo.subscribe(() => {
+      this.audio.pause();
+    });
   }
 
   ngOnInit(): void {
@@ -40,11 +44,16 @@ export class PlaylistCardComponent implements OnInit, OnDestroy {
     });
   }
 
-  public playPauseAudio(): void {
-    this.audio.paused ? this.audio.play() : this.audio.pause();
+  public playAudio(): void {
+    this.playlistService.onPlayVideo();
+    this.audio.play();
   }
 
-  formatLabel(value: number): number {
+  public pauseAudio(): void {
+    this.audio.pause();
+  }
+
+  public formatLabel(value: number): number {
     return Math.round((value + Number.EPSILON) * 100) / 100;
   }
 
@@ -63,7 +72,7 @@ export class PlaylistCardComponent implements OnInit, OnDestroy {
 
   }
 
-   ngOnDestroy(): void {
+  ngOnDestroy(): void {
     this.audio.pause();
     this.audio.removeAttribute('src');
   }

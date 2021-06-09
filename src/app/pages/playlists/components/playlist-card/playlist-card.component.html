@@ -7,10 +7,10 @@
     </div>
     <mat-card-actions class="controls">
       <button mat-icon-button>
-        <mat-icon (click)="this.playPauseAudio()"
+        <mat-icon (click)="this.playAudio()"
                   *ngIf="this.audio.paused">play_arrow
         </mat-icon>
-        <mat-icon (click)="this.playPauseAudio()"
+        <mat-icon (click)="this.pauseAudio()"
                   *ngIf="!this.audio.paused">pause
         </mat-icon>
       </button>

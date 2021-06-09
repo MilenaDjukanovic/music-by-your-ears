@@ -1,1 +1,38 @@
-<p>home works!</p>
+<div class="container">
+  <mat-card class="description">
+    <mat-card-title>
+      Music by your ears
+    </mat-card-title>
+    <mat-card-subtitle>
+      <p>Making music has never been easier!</p>
+    </mat-card-subtitle>
+    <div>
+      <p>
+        We are here to help you create something new. Combining available sounds you can make your own unique one!
+        Only thing you have to do is click a few buttons.
+        If you're not happy with the results you can always see playlists made by our team!
+      </p>
+      <img class="cover-image" src="/assets/backgroundImages/music.jpg" alt="">
+    </div>
+    <div class="actions">
+      <button mat-flat-button color="accent"> Create sound</button>
+      <button mat-flat-button color="accent"> Playlists</button>
+    </div>
+  </mat-card>
+  <mat-card class="info">
+    <mat-card-title>
+      Comments
+    </mat-card-title>
+    <mat-card-subtitle>
+      We love to hear from you and listen to your experience. Sends us your comment at
+      musicByYourEars@yahoo.com!By then read some of the comments others have posted!
+    </mat-card-subtitle>
+  </mat-card>
+  <div class="comments">
+    <div *ngFor="let comment of comments">
+      <app-comment-card [comment]="comment"></app-comment-card>
+    </div>
+  </div>
+
+
+</div>

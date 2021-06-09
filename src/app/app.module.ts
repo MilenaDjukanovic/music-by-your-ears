@@ -22,6 +22,8 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { ButtonDialogComponent } from './pages/playlists/components/button-dialog/button-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import {HttpClientModule} from '@angular/common/http';
+import {CommentCardComponent} from './pages/home/components/comment-card/comment-card.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     PlaylistsComponent,
     BackgroundControlComponent,
     PlaylistCardComponent,
-    ButtonDialogComponent
+    ButtonDialogComponent,
+    CommentCardComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatProgressBarModule,
     MatSliderModule,
     MatTooltipModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,7 @@
   <div *ngFor="let icon of this.data.icons" style="display: flex; flex-direction: column;
   align-items: center; padding-left: 1em;padding-top: 1em">
     <button mat-fab>
-      <mat-icon>{{icon}}</mat-icon>
+      <mat-icon svgIcon="{{icon}}" class="icon"></mat-icon>
     </button>
     <span>{{icon}}</span>
   </div>
