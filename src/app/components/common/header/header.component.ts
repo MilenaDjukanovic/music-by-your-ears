@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {BackgroundChangeService} from '../../../services/background-change.service';
 import {Subscription} from 'rxjs';
+import {Router, NavigationEnd} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -20,9 +21,9 @@ export class HeaderComponent implements OnInit {
       this.backgroundImage = 'url(' + data.backgroundImage + ')';
     });
 
-    if(!this.backgroundChangeService.getLastSelectedBackground()){
+    if (!this.backgroundChangeService.getLastSelectedBackground()){
       this.backgroundChangeService.setDefaultBackground();
     }
-  }
 
+  }
 }

@@ -24,6 +24,7 @@ import { ButtonDialogComponent } from './pages/playlists/components/button-dialo
 import {MatDialogModule} from '@angular/material/dialog';
 import {HttpClientModule} from '@angular/common/http';
 import {CommentCardComponent} from './pages/home/components/comment-card/comment-card.component';
+import {FlipCardComponent} from './pages/home/components/flip-card/flip-card.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {CommentCardComponent} from './pages/home/components/comment-card/comment
     BackgroundControlComponent,
     PlaylistCardComponent,
     ButtonDialogComponent,
-    CommentCardComponent
+    CommentCardComponent,
+    FlipCardComponent
   ],
   imports: [
     BrowserModule,
