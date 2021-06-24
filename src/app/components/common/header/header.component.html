@@ -39,8 +39,8 @@
       </mat-nav-list>
     </mat-sidenav>
 
-    <mat-sidenav-content class="page-content" [ngStyle]="{'background-image' : this.backgroundImage}">
-      <router-outlet></router-outlet>
+    <mat-sidenav-content #sidenavContent class="page-content" [ngStyle]="{'background-image' : this.backgroundImage}">
+      <router-outlet (activate)="this.onRouteChange()"></router-outlet>
     </mat-sidenav-content>
 
   </mat-sidenav-container>

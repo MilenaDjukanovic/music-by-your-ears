@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {BackgroundChangeService} from '../../../services/background-change.service';
 import {Subscription} from 'rxjs';
-import {Router, NavigationEnd} from '@angular/router';
+import {MatSidenavContent} from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,9 @@ export class HeaderComponent implements OnInit {
 
   private subscription!: Subscription;
   public backgroundImage!: string;
+
+  @ViewChild('sidenavContent')
+  public sideNavContent!: MatSidenavContent;
 
   constructor(private backgroundChangeService: BackgroundChangeService) {
   }
@@ -25,5 +28,9 @@ export class HeaderComponent implements OnInit {
       this.backgroundChangeService.setDefaultBackground();
     }
 
+  }
+
+  public onRouteChange(): void{
+    this.sideNavContent.getElementRef().nativeElement.scroll(0, 0);
   }
 }
